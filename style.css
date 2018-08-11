@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: white;
+  line-height: 1.6;
+}
+
+.showcase {
+  background-image:url("nature.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.showcase h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.showcase p {
+  font-size: 1.2rem;
+}
+
+.button {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 20px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+section {
+  color: black;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+#zadnji {
+  display: flex;
+}
+
+.box-2 {
+  padding: 10px;
+}
+
+.box-1, .box-3 {
+  background: #926239;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.box-1:hover, .box-3:hover {
+  box-shadow: 5px 10px 8px #888888;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 476px) {
+  #zadnji {
+    display: flex;
+    flex-direction: column;
+  }
+}
